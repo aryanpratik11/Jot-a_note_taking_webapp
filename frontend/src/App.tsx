@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Dashboard from "./pages/Dashboard";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
@@ -13,7 +13,8 @@ export default function App() {
       {/* Routes */}
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
